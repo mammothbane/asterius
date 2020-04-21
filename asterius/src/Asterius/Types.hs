@@ -383,7 +383,7 @@ data Expression
       { unresolvedLocalReg :: UnresolvedLocalReg,
         value :: Expression
       }
-  | Barf
+  | Barf -- See Asterius.Passes.Barf
       { barfMessage :: BS.ByteString,
         barfReturnTypes :: [ValueType]
       }
