@@ -56,6 +56,7 @@ jobs:
           command: |
             export PATH=~/.local/bin:~/node/bin:$PATH
             stack --no-terminal -j4 build --test --no-run-tests
+            export ASTERIUS_CONFIGURE_OPTIONS=-v3
             stack --no-terminal exec ahc-boot
       - run:
           name: Test asterius
